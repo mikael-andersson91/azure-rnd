@@ -19,7 +19,7 @@ def main():
     # Create custom profile assignment
     custom_profile_assignment = {
         "properties": {
-            "configurationProfile": f"/subscriptions/{SUBSCRIPTION_ID}/resourceGroups/{rg}/providers/Microsoft.Automanage/configurationProfiles/{profile_name}"
+            "configurationProfile": f"/subscriptions/{SUBSCRIPTION_ID}/resourceGroups/rpa-runner-image-rg/providers/Microsoft.Automanage/configurationProfiles/{profile_name}"
         }
     }
 
