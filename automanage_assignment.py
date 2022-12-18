@@ -1,6 +1,6 @@
 import os
 
-from azure.identity import DefaultAzureCredential
+from azure.identity import AzureCliCredential
 from azure.mgmt.automanage import AutomanageClient
 
 
@@ -11,7 +11,7 @@ def main():
     SUBSCRIPTION_ID = os.getenv('SUBSCRIPTION_ID')
 
     # Create Automanage Client
-    credential = DefaultAzureCredential()
+    credential = AzureCliCredential()
     client = AutomanageClient(credential, SUBSCRIPTION_ID)
 
 
