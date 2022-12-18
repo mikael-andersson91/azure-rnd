@@ -51,4 +51,4 @@ jobs:
       # Runs a set of commands using the runners shell
       - run: python list_groups.py
 
-      - run: automanage_assignment.py
+      - run: python automanage_assignment.py
