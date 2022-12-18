@@ -5,9 +5,9 @@ from azure.mgmt.automanage import AutomanageClient
 
 
 def main():
-    rg = "resourceGroupName"
-    profile_name = "configurationProfileName"
-    virtual_machines = "vmName1,vmName2".split(",")
+    rg = "new-vm-rg"
+    profile_name = "automanage-rnd"
+    virtual_machines = "new-vm"
     SUBSCRIPTION_ID = os.getenv('SUBSCRIPTION_ID')
 
     # Create Automanage Client
