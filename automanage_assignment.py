@@ -8,7 +8,7 @@ def main():
     rg = "new-vm-rg"
     profile_name = "automanage-rnd"
     virtual_machines = "new-vm"
-    SUBSCRIPTION_ID = os.getenv('SUBSCRIPTION_ID')
+    SUBSCRIPTION_ID = os.environ('AZURE_SUBSCRIPTION_ID')
 
     # Create Automanage Client
     credential = AzureCliCredential()
