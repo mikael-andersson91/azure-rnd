@@ -30,4 +30,4 @@ for group in list(group_list):
         vms_in_rg = compute_client.virtual_machines.list(group.name)
         for vm in vms_in_rg:
             print(f"Turning off + {vm.name:<{(column_width*4)}}")
-            compute_client.virtual_machines.begin_deallocate(group,vm)
+            compute_client.virtual_machines.begin_deallocate(group.name,vm.name)
