@@ -1,3 +1,8 @@
 azure-mgmt-resource
 azure-identity
 azure-mgmt-automanage
+azure-keyvault-keys
+azure-mgmt-compute
+azure-mgmt-keyvault
+azure-mgmt-network
+azure-mgmt-resource
