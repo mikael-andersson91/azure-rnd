@@ -26,7 +26,7 @@ print("-" * (column_width * 2))
 
 for group in list(group_list):
     print(f"{group.name:<{column_width}}{group.location}")
-    virtual_machines = compute_client.virtual_machines.list(group)
-    for vm in virtual_machines:
+    vms_in_rg = compute_client.virtual_machines.list(group)
+    for vm in vms_in_rg:
         print(f"Turning off + {vm.name:<{(column_width*4)}}")
         compute_client.virtual_machines.begin_power_off(group,vm)
