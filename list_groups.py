@@ -27,7 +27,7 @@ print("-" * (column_width * 2))
 for group in list(group_list):
     print(f"{group.name:<{column_width}}{group.location}")
     if group.name == "rpa-runner-image-rg":
-        vms_in_rg = compute_client.virtual_machines.list(group)
+        vms_in_rg = compute_client.virtual_machines.list(group.name)
         for vm in vms_in_rg:
             print(f"Turning off + {vm.name:<{(column_width*4)}}")
             compute_client.virtual_machines.begin_deallocate(group,vm)
